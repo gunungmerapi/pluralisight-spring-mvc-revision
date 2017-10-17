@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HelloController {
 
-	@RequestMapping(value ="/greeting")
+	@RequestMapping(value ="/greeting")		// maps to greeting.html
 	public String sayHello (Model model) {
 		
-		model.addAttribute("greeting", "Hello World 20202020");
+		model.addAttribute("greeting", "Hello World");
 		
-		return "hello";
+		return "hello";		//returns hello.jsp
 	}
 	
 }
